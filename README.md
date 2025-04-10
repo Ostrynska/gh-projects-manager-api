@@ -2,6 +2,8 @@
 
 This is a simple Express-based backend with SQLite used for storing public GitHub repositories per authenticated user.
 
+🚩🚩🚩 Please note that the backend is hosted on a free server, so it's recommended to run it locally at http://localhost:3001 for better performance. 🚩🚩🚩 
+
 ## 🚀 Features
 
 - ✅ Save or update repositories linked to a user’s email  
