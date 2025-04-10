@@ -34,7 +34,7 @@ node server.js
 ####  `GET /api/user-projects?email=...`
 Returns all GitHub repositories associated with the given user's email.
 
-#### `PUT /api/save-projects`
+#### `PATCH /api/save-projects`
 Saves or updates GitHub repositories for a given user.
 
 **Request Body**:
