@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS user_projects (
   )
 `);
 
-app.patch('/api/save-projects', (req, res) => {
+app.put('/api/save-projects', (req, res) => {
   const { email, projects } = req.body;
 
   if (!email || !projects || !Array.isArray(projects)) {
@@ -55,7 +55,7 @@ app.patch('/api/save-projects', (req, res) => {
       project.issues,
       project.createdAt,
       (err) => {
-        if (err) console.error('❌ Error:', err.message);
+        if (err) console.error('Error:', err.message);
       }
     );
   });
