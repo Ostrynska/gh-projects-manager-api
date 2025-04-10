@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS user_projects (
   )
 `);
 
-app.put('/api/save-projects', (req, res) => {
+app.post('/api/save-projects', (req, res) => {
   const { email, projects } = req.body;
 
   if (!email || !projects || !Array.isArray(projects)) {
